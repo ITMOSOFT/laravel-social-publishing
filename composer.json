@@ -1,0 +1,42 @@
+{
+    "name": "itmosoft/laravel-social-publishing",
+    "description": "Social account management, content scheduling, publication tracking, and platform adapter contracts for Laravel applications.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "illuminate/contracts": "^12.0 || ^13.0",
+        "illuminate/database": "^12.0 || ^13.0",
+        "illuminate/support": "^12.0 || ^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0 || ^11.0",
+        "phpunit/phpunit": "^11.5 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ItmoSoft\\SocialPublishing\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ItmoSoft\\SocialPublishing\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-text"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ItmoSoft\\SocialPublishing\\SocialPublishingServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
